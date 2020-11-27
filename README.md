@@ -30,75 +30,55 @@
 نکته ۲: بدیهی است که زمان و نتیجه آزمایش می‌تواند وابسته به سیستمی باشد که شما از آن استفاده می‌کنید. نتایج فعلی موجود در پوشه results بر مبنای سیستمی با مشخصات زیر است:
 
 <div dir="ltr">
-> Architecture:                    x86_64
-> 
-> CPU op-mode(s):                  32-bit, 64-bit
-> 
-> Byte Order:                      Little Endian
-> 
-> Address sizes:                   39 bits physical, 48 bits virtual
-> 
-> CPU(s):                          4
-> 
-> On-line CPU(s) list:             0-3
-> 
-> Thread(s) per core:              2
-> 
-> Core(s) per socket:              2
-> 
-> Socket(s):                       1
-> 
-> NUMA node(s):                    1
-> 
-> Vendor ID:                       GenuineIntel
-> 
-> CPU family:                      6
-> 
-> Model:                           61
-> 
-> Model name:                      Intel(R) Core(TM) i7-5500U CPU @ 2.40GHz
-> 
-> Stepping:                        4
-> 
-> CPU MHz:                         2503.209
-> 
-> CPU max MHz:                     3000.0000
-> 
-> CPU min MHz:                     500.0000
-> 
-> BogoMIPS:                        4789.20
-> 
-> L1d cache:                       64 KiB
-> 
-> L1i cache:                       64 KiB
-> 
-> L2 cache:                        512 KiB
-> 
-> L3 cache:                        4 MiB
-> 
-> NUMA node0 CPU(s):               0-3
-> 
-> Vulnerability Itlb multihit:     KVM: Mitigation: VMX unsupported
-> 
-> Vulnerability L1tf:              Mitigation; PTE Inversion
-> 
-> Vulnerability Mds:               Mitigation; Clear CPU buffers; SMT vulnerable
-> 
-> Vulnerability Meltdown:          Mitigation; PTI
-> 
-> Vulnerability Spec store bypass: Mitigation; Speculative Store Bypass disabled via prctl and secco
-> 
->                                  mp
-> 
-> Vulnerability Spectre v1:        Mitigation; usercopy/swapgs barriers and __user pointer sanitizat
-> 
->                                  ion
-> 
-> Vulnerability Spectre v2:        Mitigation; Full generic retpoline, IBPB conditional, IBRS_FW, ST
-> 
->                                  IBP conditional, RSB filling
-> 
-> Vulnerability Srbds:             Mitigation; Microcode
+```
+Architecture:                    x86_64
+CPU op-mode(s):                  32-bit, 64-bit
+Byte Order:                      Little Endian
+Address sizes:                   39 bits physical, 48 bits virtual
+CPU(s):                          4
+On-line CPU(s) list:             0-3
+Thread(s) per core:              2
+Core(s) per socket:              2
+Socket(s):                       1
+NUMA node(s):                    1
+Vendor ID:                       GenuineIntel
+CPU family:                      6
+Model:                           61
+Model name:                      Intel(R) Core(TM) i7-5500U CPU @ 2.40GHz
+Stepping:                        4
+CPU MHz:                         2055.753
+CPU max MHz:                     3000.0000
+CPU min MHz:                     500.0000
+BogoMIPS:                        4789.20
+L1d cache:                       64 KiB
+L1i cache:                       64 KiB
+L2 cache:                        512 KiB
+L3 cache:                        4 MiB
+NUMA node0 CPU(s):               0-3
+Vulnerability Itlb multihit:     KVM: Mitigation: VMX unsupported
+Vulnerability L1tf:              Mitigation; PTE Inversion
+Vulnerability Mds:               Mitigation; Clear CPU buffers; SMT vulnerable
+Vulnerability Meltdown:          Mitigation; PTI
+Vulnerability Spec store bypass: Mitigation; Speculative Store Bypass disabled via prctl and secco
+                                 mp
+Vulnerability Spectre v1:        Mitigation; usercopy/swapgs barriers and __user pointer sanitizat
+                                 ion
+Vulnerability Spectre v2:        Mitigation; Full generic retpoline, IBPB conditional, IBRS_FW, ST
+                                 IBP conditional, RSB filling
+Vulnerability Srbds:             Mitigation; Microcode
+Vulnerability Tsx async abort:   Not affected
+Flags:                           fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat
+                                  pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx
+                                  pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good no
+                                 pl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 mo
+                                 nitor ds_cpl est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 ss
+                                 e4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rd
+                                 rand lahf_lm abm 3dnowprefetch cpuid_fault epb invpcid_single pti
+                                  ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erm
+                                 s invpcid rdseed adx smap intel_pt xsaveopt dtherm ida arat pln p
+                                 ts md_clear flush_l1d
+
+```
 </div>
 
 

@@ -23,6 +23,49 @@
 
 
 ## شیوه انجام آزمایش
+در قسمت `__name__` تابعی به نام `show_plt(Range, Steps)` وجود دارد. مقدار Range مشخص می‌کند که حداکثر طولی که ماتریس مربعی فرضی ما خواهد داشت چقدر است. عدد دوم فاصله بین هر دو عدد را مشخص می‌کند. مثلا `show_plt(1000, 50)` به ازای ماتریس‌هایی به طول ۱ تا ۱۰۰۰ آزمایش را تکرار می‌کند. به دلیل طولانی شدن زمان آزمایش عدد ۵۰ مشخص می‌کند در بازه‌های ۵۰ تایی ماتریس‌‌های بینابینی نادیده گرفته شوند. به عبارتی مثال فوق تنها ۲۰۰ بار اجرا می‌شود.
+
+نکته: هر چقدر میزان Steps کمتر باشد، نتیجه آزمایش و نمودار حاصل دقیق‌تر است. از آن‌جایی که معمولا نتیجه آزمایش در اعدادی که بهم نزدیک هستند تفاوت چشم‌گیری ندارد؛ با افزایش Steps می‌توان سرعت اجرای کل آزمایش را زیاد کرد.
+
+نکته ۲: بدیهی است که زمان و نتیجه آزمایش می‌تواند وابسته به سیستمی باشد که شما از آن استفاده می‌کنید. نتایج فعلی موجود در پوشه results بر مبنای سیستمی با مشخصات زیر است:
+
+`
+Architecture:                    x86_64
+CPU op-mode(s):                  32-bit, 64-bit
+Byte Order:                      Little Endian
+Address sizes:                   39 bits physical, 48 bits virtual
+CPU(s):                          4
+On-line CPU(s) list:             0-3
+Thread(s) per core:              2
+Core(s) per socket:              2
+Socket(s):                       1
+NUMA node(s):                    1
+Vendor ID:                       GenuineIntel
+CPU family:                      6
+Model:                           61
+Model name:                      Intel(R) Core(TM) i7-5500U CPU @ 2.40GHz
+Stepping:                        4
+CPU MHz:                         2503.209
+CPU max MHz:                     3000.0000
+CPU min MHz:                     500.0000
+BogoMIPS:                        4789.20
+L1d cache:                       64 KiB
+L1i cache:                       64 KiB
+L2 cache:                        512 KiB
+L3 cache:                        4 MiB
+NUMA node0 CPU(s):               0-3
+Vulnerability Itlb multihit:     KVM: Mitigation: VMX unsupported
+Vulnerability L1tf:              Mitigation; PTE Inversion
+Vulnerability Mds:               Mitigation; Clear CPU buffers; SMT vulnerable
+Vulnerability Meltdown:          Mitigation; PTI
+Vulnerability Spec store bypass: Mitigation; Speculative Store Bypass disabled via prctl and secco
+                                 mp
+Vulnerability Spectre v1:        Mitigation; usercopy/swapgs barriers and __user pointer sanitizat
+                                 ion
+Vulnerability Spectre v2:        Mitigation; Full generic retpoline, IBPB conditional, IBRS_FW, ST
+                                 IBP conditional, RSB filling
+Vulnerability Srbds:             Mitigation; Microcode
+`
 
 
 

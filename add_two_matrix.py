@@ -103,4 +103,4 @@ def show_plt(Range=100, steps=1, is_fresh=True):
 
 
 if __name__ == "__main__":
-    show_plt(10000, 500)
+    show_plt(500, 1)

@@ -30,6 +30,7 @@
 نکته ۲: بدیهی است که زمان و نتیجه آزمایش می‌تواند وابسته به سیستمی باشد که شما از آن استفاده می‌کنید. نتایج فعلی موجود در پوشه results بر مبنای سیستمی با مشخصات زیر است:
 
 ```shell
+<div dir="ltr">
 Architecture:                    x86_64
 CPU op-mode(s):                  32-bit, 64-bit
 Byte Order:                      Little Endian
@@ -76,7 +77,7 @@ Flags:                           fpu vme de pse tsc msr pae mce cx8 apic sep mtr
                                   ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erm
                                  s invpcid rdseed adx smap intel_pt xsaveopt dtherm ida arat pln p
                                  ts md_clear flush_l1d
-
+</div>
 ```
 
 

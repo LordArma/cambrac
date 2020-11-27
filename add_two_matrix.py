@@ -2,6 +2,7 @@ import cProfile
 import io
 import json
 import pstats
+import os
 import matplotlib.pyplot as plt
 
 
@@ -29,9 +30,19 @@ def add_by_col(length):
     add_by(length, False)
 
 
-def simulate(Range, steps=1):
+def simulate(Range=100, steps=1):
     rows = []
     cols = []
+
+    test_prefix = "Until" + str(Range) + "Step" + str(steps) + "/"
+    path = "./results/" + test_prefix
+
+    try:
+        os.mkdir(path)
+    except OSError:
+        pass
+    else:
+        pass
 
     for i in range(1, Range, steps):
         pr = cProfile.Profile()
@@ -46,7 +57,7 @@ def simulate(Range, steps=1):
         result = result.split()[4]
         rows.append(float(result))
 
-    with open('./results/rows.txt', 'w+') as f:
+    with open(path + 'rows.txt', 'w+') as f:
         f.write(str(rows))
 
     for i in range(1, Range, steps):
@@ -62,18 +73,19 @@ def simulate(Range, steps=1):
         result = result.split()[4]
         cols.append(float(result))
 
-    with open('./results/cols.txt', 'w+') as f:
+    with open(path + 'cols.txt', 'w+') as f:
         f.write(str(cols))
 
 
-def show_plt(Range=100, is_fresh=False):
+def show_plt(Range=100, steps=1, is_fresh=True):
     if is_fresh:
-        simulate(Range)
+        simulate(Range, steps)
 
-    test_prefix = ""
+    test_prefix = "Until" + str(Range) + "Step" + str(steps) + "/"
+    path = "./results/" + test_prefix
 
-    myrows = json.load(open('./results/' + test_prefix + 'rows.txt'))
-    mycols = json.load(open('./results/' + test_prefix + 'cols.txt'))
+    myrows = json.load(open(path + 'rows.txt'))
+    mycols = json.load(open(path + 'cols.txt'))
 
     fig, ax = plt.subplots()
 
@@ -86,8 +98,9 @@ def show_plt(Range=100, is_fresh=False):
     fig = plt.gcf()
     fig.canvas.set_window_title('Compare Add Two Matrix by Row & Col')
     plt.title("Result")
-    plt.show()
+    plt.savefig(path + 'plot.png', dpi=300, bbox_inches='tight')
+    print("Image has been saved as " + path + 'plot.png')
 
 
 if __name__ == "__main__":
-    show_plt(500, True)
+    show_plt(10000, 500)

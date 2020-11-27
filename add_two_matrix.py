@@ -77,7 +77,7 @@ def simulate(Range=100, steps=1):
         f.write(str(cols))
 
 
-def show_plt(Range=100, steps=1, is_fresh=True):
+def make_plt(Range=100, steps=1, is_fresh=True):
     if is_fresh:
         simulate(Range, steps)
 
@@ -103,4 +103,6 @@ def show_plt(Range=100, steps=1, is_fresh=True):
 
 
 if __name__ == "__main__":
-    show_plt(500, 1)
+    Range = 500
+    Steps = 1
+    make_plt(Range, Steps)

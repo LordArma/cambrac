@@ -18,7 +18,7 @@
 ## شیوه نصب
 برای اجرای این برنامه در کامپیوتر خود لازم است تا ماژول‌های موجود در requirements.txt بر روی سیستم‌تان نصب باشد. برای این کار تنها کافی است که دستور زیر را اجرا کنید.
 
-`pip install requirements.txt `
+`pip install requirements.txt`
 
 
 
@@ -28,8 +28,10 @@
 نکته: هر چقدر میزان Steps کمتر باشد، نتیجه آزمایش و نمودار حاصل دقیق‌تر است. از آن‌جایی که معمولا نتیجه آزمایش در اعدادی که بهم نزدیک هستند تفاوت چشم‌گیری ندارد؛ با افزایش Steps می‌توان سرعت اجرای کل آزمایش را زیاد کرد.
 
 نکته ۲: بدیهی است که زمان و نتیجه آزمایش می‌تواند وابسته به سیستمی باشد که شما از آن استفاده می‌کنید. نتایج فعلی موجود در پوشه results بر مبنای سیستمی با مشخصات زیر است:
-</dir>
 
+</div>
+
+<div>
 ```shell
 Architecture:                    x86_64
 CPU op-mode(s):                  32-bit, 64-bit
@@ -78,6 +80,8 @@ Flags:                           fpu vme de pse tsc msr pae mce cx8 apic sep mtr
                                  s invpcid rdseed adx smap intel_pt xsaveopt dtherm ida arat pln p
 
 ```
+</div>
+
 <div dir="rtl">
 
 

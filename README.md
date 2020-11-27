@@ -29,7 +29,6 @@
 
 نکته ۲: بدیهی است که زمان و نتیجه آزمایش می‌تواند وابسته به سیستمی باشد که شما از آن استفاده می‌کنید. نتایج فعلی موجود در پوشه results بر مبنای سیستمی با مشخصات زیر است:
 
-<div dir="ltr">
 ```shell
 Architecture:                    x86_64
 CPU op-mode(s):                  32-bit, 64-bit
@@ -79,7 +78,6 @@ Flags:                           fpu vme de pse tsc msr pae mce cx8 apic sep mtr
                                  ts md_clear flush_l1d
 
 ```
-</div>
 
 
 

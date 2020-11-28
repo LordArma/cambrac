@@ -35,7 +35,7 @@ def simulate(Range=100, steps=1):
     cols = []
 
     test_prefix = "Until" + str(Range) + "Step" + str(steps) + "/"
-    path = "./results/" + test_prefix
+    path = os.getcwd() + "/results/" + test_prefix
 
     try:
         os.mkdir(path)
@@ -82,7 +82,7 @@ def make_plt(Range=100, steps=1, is_fresh=True):
         simulate(Range, steps)
 
     test_prefix = "Until" + str(Range) + "Step" + str(steps) + "/"
-    path = "./results/" + test_prefix
+    path = os.getcwd() + "/results/" + test_prefix
 
     myrows = json.load(open(path + 'rows.txt'))
     mycols = json.load(open(path + 'cols.txt'))

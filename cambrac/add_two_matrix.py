@@ -35,7 +35,7 @@ def simulate(Range=100, steps=1):
     cols = []
 
     test_prefix = "Until" + str(Range) + "Step" + str(steps) + "/"
-    path = "./results/" + test_prefix
+    path = os.path.dirname(__file__) + "/results/" + test_prefix
 
     try:
         os.mkdir(path)
@@ -82,7 +82,7 @@ def make_plt(Range=100, steps=1, is_fresh=True):
         simulate(Range, steps)
 
     test_prefix = "Until" + str(Range) + "Step" + str(steps) + "/"
-    path = "./results/" + test_prefix
+    path = os.path.dirname(__file__) + "/results/" + test_prefix
 
     myrows = json.load(open(path + 'rows.txt'))
     mycols = json.load(open(path + 'cols.txt'))
@@ -102,7 +102,17 @@ def make_plt(Range=100, steps=1, is_fresh=True):
     print("Image has been saved as " + path + 'plot.png')
 
 
+<<<<<<< HEAD:add_two_matrix.py
 if __name__ == "__main__":
     Range = 300
+=======
+def main():
+    Range = 500
+>>>>>>> 8f3f6b460a5b692ba77405dbb20aef98b9a7df76:cambrac/add_two_matrix.py
     Steps = 1
     make_plt(Range, Steps)
+
+
+if __name__ == "__main__":
+    main()
+

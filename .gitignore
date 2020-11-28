@@ -1,5 +1,5 @@
 venv/*
 .idea/*
-buid/*
+build/*
 cambrac.egg-info/*
 dist/*

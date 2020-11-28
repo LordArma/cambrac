@@ -11,8 +11,7 @@ dependencies = [
     'Pillow>=8.0.1',
     'pyparsing>=2.4.7',
     'python-dateutil>=2.8.1',
-    'six>=1.15.0',
-    'cambrac>=0.0.1',
+    'six>=1.15.0'
 ]
 
 setup(

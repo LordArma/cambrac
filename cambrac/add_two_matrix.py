@@ -101,8 +101,11 @@ def make_plt(Range=100, steps=1, is_fresh=True):
     plt.savefig(path + 'plot.png', dpi=300, bbox_inches='tight')
     print("Image has been saved as " + path + 'plot.png')
 
+def main();
+    Range = 500
+    Steps = 10
+    make_plt(Range, Steps)
+
 
 if __name__ == "__main__":
-    Range = 500
-    Steps = 1
-    make_plt(Range, Steps)
+    main()

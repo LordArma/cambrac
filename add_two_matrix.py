@@ -103,6 +103,6 @@ def make_plt(Range=100, steps=1, is_fresh=True):
 
 
 if __name__ == "__main__":
-    Range = 500
+    Range = 300
     Steps = 1
     make_plt(Range, Steps)

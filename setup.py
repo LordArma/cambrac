@@ -32,10 +32,5 @@ setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
-    entry_points={
-	"console_scripts": [
-	    "cambrac = cambrac.add_two_matrix:main"
-	]
-    },
     python_requires='>=3.5'
 )

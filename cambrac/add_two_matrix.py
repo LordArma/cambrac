@@ -102,13 +102,8 @@ def make_plt(Range=100, steps=1, is_fresh=True):
     print("Image has been saved as " + path + 'plot.png')
 
 
-<<<<<<< HEAD:add_two_matrix.py
-if __name__ == "__main__":
-    Range = 300
-=======
 def main():
     Range = 500
->>>>>>> 8f3f6b460a5b692ba77405dbb20aef98b9a7df76:cambrac/add_two_matrix.py
     Steps = 1
     make_plt(Range, Steps)
 
